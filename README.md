@@ -5,15 +5,15 @@ Easily create a Telegram bot in node.js with the new bot api to lock your system
 
 ```
 git clone https://github.com/suneeshtr/telegram-linux.git
-cd node-telegrambot
+cd telegram-linux
 npm install
 ```
 
 ## Running ##
 
 * Get your bot token from [@botfather](https://telegram.me/botfather). This will be TG_TOKEN
-* Install slock using apt-get
-* Creating a service file sudo nano /etc/systemd/system/nodeserver.service 
+* Install slock ```sudo apt-get install slock```
+* Creating a service file ```sudo nano /etc/systemd/system/nodeserver.service```
 
 ```
 
