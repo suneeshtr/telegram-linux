@@ -57,7 +57,7 @@ systemctl restart nodeserver.service
 ```
 # For success login and login attempt failed messages 
 
-in '/etc/pam.d/common-auth'
+in ```/etc/pam.d/common-auth```
 
 ```
 # here are the per-package modules (the "Primary" block)
