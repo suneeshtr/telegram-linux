@@ -55,8 +55,11 @@ systemctl start nodeserver.service
 systemctl daemon-reload
 systemctl restart nodeserver.service
 ```
-# For success login and login attempt failed messages add to '/etc/pam.d/common-auth'
+# For success login and login attempt failed messages 
 
+in '/etc/pam.d/common-auth'
+
+```
 # here are the per-package modules (the "Primary" block)
 auth    [success=2 default=ignore]      pam_unix.so nullok_secure
 auth    [default=ignore]                pam_exec.so seteuid /home/<user>/telegram-linux/fail.sh
@@ -69,4 +72,6 @@ auth    required                        pam_permit.so
 # and here are more per-package modules (the "Additional" block)
 # end of pam-auth-update config
 auth optional  pam_exec.so /home/<user>/telegram-linux/success.sh
+
+```
 
